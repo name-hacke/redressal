@@ -4,123 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <title></title>
-    <style media="screen">
-      *{
-        padding: 0px;
-        margin: 0px;
-      }
-      .card_custom{
-        display: flex;
-        width: inherit;
-        align-items:center;
-        padding: 10px;
-        margin-top: 30px;
-        /* box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); */
-        transition-property: all;
-        transition-duration: 0.6s;
-      }
-      .card_custom:hover{
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-      }
-      .main-heading{
-        margin-top: 40px;
-        color: white;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #99B1C4;
-      }
-      @media screen and (max-width: 767px){
-        .main-heading{
-          margin-top: 40px;
-          color: white;
-          padding-bottom: 10px;
-          border-bottom: 1px solid #99B1C4;
-        }
-      }
-      @media screen and (max-width: 767px){
-      .img_size{
-        display: none;
-      }
-      body{
-        background-color: #495465;
-      }
-      }
-      @media screen and (max-width: 1100px){
-        body{
-          margin: 0 auto;
-        }
 
-        .form-group{
-          align-items: center;
-        }
-
-
-      }
-      @media screen and (min-width: 768px){
-      .img_size{
-        position: absolute;
-        width: 100%;
-        height:100%;
-        z-index: -1;
-        filter: brightness(40%);
-      }
-      }
-      .responsive{
-        width:100%;
-        height: auto;
-      }
-      h3{
-        text-align: center;
-      }
-      .center-align{
-        padding: 5px;
-        text-align: center;
-      }
-      .custom-select{
-        width: 300px !important;
-        text-align: center;
-        margin-left: 200px auto;
-      }
-      .infocard{
-        margin-top: 30px;
-        width:inherit;
-      }
-      .info{
-        color:black;
-      }
-      .container-secondary{
-        padding: 10px;
-        margin-top: 30px;
-        background-color: white;
-        width: inherit;
-        height: auto;
-        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-      }
-      h4{
-        text-align: center;
-        padding: 5px;
-        border-bottom:1px solid grey;
-      }
-      .questions{
-        margin-top: 10px;
-      }
-      .formtitle{
-        display: block;
-        color:black;
-
-      }
-      .btn-info{
-        width:200px;
-      }
-
-    </style>
   </head>
   <body>
-    <img src="../images/book1.jpg" alt="" class="img-fluid img_size responsive">
+    <img src="<?php echo base_url(); ?>images/book1.jpg" alt="" class="img-fluid img_size responsive">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12">
@@ -158,7 +51,7 @@
                     <form action="" method="POST">
                     <div class="form-group">
                       <h5 class="center-align">Affiliation</h5>
-                      <select class="custom-select" name="aff">
+                      <select class="custom-select" name="aff" id="aff">
                         <option label=" "></option>
                         <option value="1">Student</option>
                         <option value="2">Staff</option>
