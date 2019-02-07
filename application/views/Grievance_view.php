@@ -25,7 +25,7 @@
           <div class="container container-secondary">
             <div class="row">
               <div class="col-lg-6 col-md-7 col-sm-12" style="padding-left:30px;">
-                <h4>FAQ's</h4>
+                <h4 id="faq">FAQ's</h4>
                 <h5 class="questions">What is Grievances and Redressal?</h5>
                 <p>Answer here...</p>
                 <hr>
@@ -42,7 +42,6 @@
               <div class="col-lg-1 vertical-line">
               </div>
               <div class="col-lg-4 col-md-5 col-sm-12">
-
                 <div class="card card_custom">
                   <div class="card-title formtitle">
                     <strong>Fill out the form</strong>
